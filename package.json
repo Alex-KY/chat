@@ -1,0 +1,32 @@
+{
+  "name": "chat-up",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "engines": {
+    "node": ">=12.22.10 <16"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.2.1",
+    "express": "^4.17.2",
+    "parcel": "^2.2.1"
+  },
+  "scripts": {
+    "server": "node ./src/server.js",
+    "start": "parcel build && node ./src/server.js",
+    "build": "parcel build",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alex-KY/chat.git"
+  },
+  "author": "alex-ky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alex-KY/chat/issues"
+  },
+  "homepage": "https://github.com/Alex-KY/chat#readme"
+}
