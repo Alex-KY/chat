@@ -1,7 +1,7 @@
 window.template = (function() {
   return `
     <div class="error-page__block">
-      <p class="big-title">404</p>
+      <p class="big-title">500</p>
       <p class="title">{{ text }}</p>
       <a class="small-text link-text" href="/">Назад к чатам</a>
     </div>
@@ -11,7 +11,7 @@ window.template = (function() {
 const tmpl = new Templator(window.template);
 
 const context = {
-  text: 'Не туда попали'
+  text: 'Мы уже фиксим'
 };
 
 const renderedTemplate = tmpl.compile(context);
