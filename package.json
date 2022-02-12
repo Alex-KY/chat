@@ -6,16 +6,14 @@
   "engines": {
     "node": ">=12.22.10 <16"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.2.1",
-    "express": "^4.17.2",
-    "parcel": "^2.2.1"
+    "@parcel/transformer-inline-string": "^2.3.1",
+    "@parcel/transformer-sass": "^2.3.1",
+    "parcel": "^2.3.1"
   },
   "scripts": {
-    "server": "node ./src/server.js",
-    "start": "parcel build && node ./src/server.js",
+    "start": "rm -rf dist && parcel build *.html && parcel --port 3000",
     "build": "parcel build",
     "test": "test"
   },
