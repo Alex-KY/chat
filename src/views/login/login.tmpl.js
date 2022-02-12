@@ -4,8 +4,8 @@ window.template = (function() {
       <p class="title">{{ title }}</p>
       <form class="sign-block__form" onsubmit="return false">
         <div class="sign-block__form__inputs">
-          <input type="text" placeholder="Логин" />
-          <input type="text" placeholder="Пароль" />
+          <input type="text" name="{{ inputs.1.name }}" placeholder="{{ inputs.1.placeholder }}" />
+          <input type="text" name="{{ inputs.2.name }}" placeholder="{{ inputs.2.placeholder }}" />
         </div>
         <div class="sign-block__form__buttons">
           <button onclick="{{ login }}">{{ buttons.login.text }}</button>
@@ -24,14 +24,16 @@ function login (e) {
 
 const context = {
   title: 'Вход',
-  inputs: [
-    {
-      label: 'Логин'
+  inputs: {
+    1: {
+      placeholder: 'Логин',
+      name: 'login'
     },
-    {
-      label: 'Пароль'
+    2: {
+      placeholder: 'Пароль',
+      name: 'password'
     }
-  ],
+  },
   buttons: {
     login: {
       text: 'Авторизоваться'
