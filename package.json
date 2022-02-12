@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "source": "src/index.html",
-  "engines": {
-    "node": ">=12.22.10 <16"
-  },
   "dependencies": {},
   "devDependencies": {
     "@parcel/transformer-inline-string": "^2.3.1",
