@@ -2,7 +2,8 @@
   "name": "chat-up",
   "version": "1.0.0",
   "description": "",
-  "source": "src/index.html",
+  "source": "src",
+  "default": "dist",
   "engines": {
     "node": ">=12.22.10 <16"
   },
@@ -25,8 +26,8 @@
     "parcel": "^2.3.1"
   },
   "scripts": {
-    "start": "rm -rf dist && parcel build src/index.html && node ./src/server.js",
-    "build": "parcel build src/index.html",
+    "start": "rm -rf dist && parcel build static/*.html && node ./src/server.js",
+    "build": "rm -rf dist && parcel build static/*.html",
     "test": "test"
   },
   "repository": {
